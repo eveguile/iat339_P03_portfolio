@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>P03 - Style Guide Template</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grid.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>P03 - Style Guide Template</h1>
+
+
+    <nav class="grid">
+        <div class="grid-col-1of6">
+            <a href="index.html">Portfolio</a>
+          </div>
+      <div class="grid-col-1of6">
+        <a href="#interactive_elements">Interactive Elements</a>
+      </div>
+      <div class="grid-col-1of6">
+        <a href="#text_elements">Text Elements</a>
+      </div>
+      <div class="grid-col-1of6">
+        <a href="#combined_elements">Combined Elements</a>
+      </div>
+      <div class="grid-col-1of6">
+        <a href="#citations">Citations</a>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+
+    <!-- knowledges were from IAT235 project-->
+    <section class="element">
+      <h3>In-text link</h3>
+      <h4>CSS selector:</h4>
+      <p>a:active, a:hover, a:focus</p>
+      <h4>Sample code:</h4>
+      <code>&lt;p&gt;&lt;a href="https://www.google.ca/search?q=reve&rlz=1C5CHFA_enCA710CA710&oq=reve&aqs=chrome..69i57j69i60l2j69i61j0l2.927j0j1&sourceid=chrome&ie=UTF-8&gt;Reve&lt;/a&gt;delivers handcrafted mid-century modern furniture with unique design and mid- to –high end price point.&lt;/p&gt;</code>
+
+      <h4>Rendered element:</h4>
+
+      <p><a href="http://www.sfu.ca/~tikol/tl.com/index.html">Tiko Lin
+        </a> is an interactive art student, currently pursuing a Bachelor of Science Degree in
+        Interactive Arts and Technology program from Simon Fraser University. She was born
+        and raised in a small coastal city of China where she built up an intimate connection and
+        bond with nature that she is able to get inspiration from. She felt that interactivity is all
+        about this connection between objects and people. If the artwork touches or inspires you
+        and talks to you, it is interactive. It resembles nature, where everything is alive and has a
+        story. Tiko has experiences and skills with graphic design, prototyping, and programming.
+        She is passionate about the way art combines with technology and bring each other to life.</p>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.nav</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <nav><a href="#interactive_elements">Interactive Elements</a></nav>
+
+    </section>
+
+
+    <p>code retrieved from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_type</p>
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button-submit:hover, .button-reset:hover</p>
+      <h4>Sample code:</h4>
+      <code>&lt;form&gt; <br>
+          &lt;button type="submit" value="Submit"&gt;Submit&lt;/button&gt;
+          &lt;button type="reset" value="Reset"&gt;Reset&lt;/button&gt;<br>
+          &lt;/form&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+
+      <form>
+        
+<button class="button"><span>BUTTON </span></button>
+      </form>
+
+    </section>
+
+
+    <!--Text input field with lable retrieved from IAT235 Work-->
+    
+
+    
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+      <h4>CSS selector:</h4>
+      <p>.img</p>
+      
+      <h4>Rendered element:</h4>
+
+      <div class="hover02 column">
+        
+        <div>
+          <figure><img src="img/336.png"  alt="img"/></figure>
+         
+        </div>
+        
+      </div>
+    </section>
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
+
+    <section class="element">
+      <h3>Headings</h3>
+      <p>.h2</p>
+      <h4>CSS selector:</h4>
+
+  
+      <h4>Rendered element:</h4>
+      <h2>heading</h2>
+      <h3>heading</h3>
+      <h4>heading</h4>
+      <h5>heading</h5>
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+      
+      <h4>CSS selector:</h4>
+      <p>.p</p>
+
+      <h4>Rendered element:</h4>
+      <p>
+        Tiko Lin is an interactive art student, currently pursuing a Bachelor of Science Degree in
+      Interactive Arts and Technology program from Simon Fraser University. She was born
+      and raised in a small coastal city of China where she built up an intimate connection and
+      bond with nature that she is able to get inspiration from. She felt that interactivity is all
+      about this connection between objects and people. If the artwork touches or inspires you
+      and talks to you, it is interactive. It resembles nature, where everything is alive and has a
+      story. Tiko has experiences and skills with graphic design, prototyping, and programming.
+      She is passionate about the way art combines with technology and bring each other to life.</p>
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+      <h4>CSS selector:</h4>
+      <p>.li</p>
+
+      <h4>Rendered element:</h4>
+      <ol>
+        <li>Decor</li>
+        <li>Living Room</li>
+        <li>Bedroom</li>
+      </ol>
+
+
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+  <p>INFO retrieved from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_nav</p>
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
+    <section class="element">
+      <h3>Main Navigation</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.nav</p>
+  
+
+      <h4>Rendered element:</h4>
+      <nav class="grid">
+        <div class="grid-col-1of6">
+          <a href="#interactive_elements">Interactive Elements</a>
+        </div>
+        <div class="grid-col-1of6">
+          <a href="#text_elements">Text Elements</a>
+        </div>
+        <div class="grid-col-1of6">
+          <a href="#combined_elements">Combined Elements</a>
+        </div>
+        <div class="grid-col-1of6">
+          <a href="#citations">Citations</a>
+        </div>
+      </nav>
+    </section>
+
+
+    <section id="citation">
+      <h2>Citation</h2>
+      <ul>
+
+          <ol>
+              Animate On Scroll Library. Retrieved from <a href="http://michalsnik.github.io/aos/">"http://michalsnik.github.io/aos/"</a>
+          </ol>
+  
+          <ol>
+              Fullscreen Overlay Nav. Retrieved from<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay">https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay</a>
+          </ol>
+        <ol>
+            Lin, L. [2016]. Personal logo. [Digital image].
+        </ol>
+        <ol>
+            Lin, L. [2016]. Personal image. [Digital image].
+        </ol>
+        <ol>
+            Lin, L. [2016]. IAT 102 Course project magazine layout. [Digital image].
+        </ol>
+        <ol>
+            Lin, L. [2017]. IAT 267 Course project smart lamp. [Digital image].
+        </ol>
+        <ol>
+          Lin, L. [2018]. IAT 336 Course project VR headset. [Digital image].
+
+        </ol>
+<ol>Smooth Scrolling. Retrieved from <a href="https://www.w3schools.com/howto/howto_css_smooth_scroll.asp">https://www.w3schools.com/howto/howto_css_smooth_scroll.asp</a></ol>
+       <ol>Text hover effect. Retrieved from <a href="https://tympanus.net/codrops/2015/05/13/inspiration-for-text-styles-and-hover-effects/">https://tympanus.net/codrops/2015/05/13/inspiration-for-text-styles-and-hover-effects/</a></ol>
+      </ul>
+    </section>
+
+    <section id="git">
+      <h2>git</h2>
+      <a href="https://gitlab1.its.sfu.ca/tikol/iat339-sp19-p03.git">https://gitlab1.its.sfu.ca/tikol/iat339-sp19-p03.git</a>
+    </section>
+   
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+</body>
+
+</html>

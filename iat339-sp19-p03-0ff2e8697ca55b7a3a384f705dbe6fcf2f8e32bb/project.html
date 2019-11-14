@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Evelyn Zhang</title>
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+  <header>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="project.html">Project</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <span data-aos="fade-down" class="nav-button" onclick="openNav()">&#9776; </span>
+  </header>
+
+  <div id="sidebar" data-aos="fade-down">
+    <img  class="project-text" src="img/project_text.png" alt="project-text">
+</div>
+
+<div class="logo" data-aos="fade-up" >
+  <a href="index.html"><img class="image" src="img/logo.png" alt="logo"></a>
+</div>
+
+
+<div class="project-nav grid" data-aos="fade-up"
+data-aos-anchor-placement="center-bottom">
+    <div class="project-single">
+        <img class="project-bg" src="img/symbiosis.jpg" alt="spectrum">
+        <a class="link" href="spectrum.html" data-letters="Spectrum">Spectrum</a>
+
+    </div>
+    <div class="project-single">
+        <img class="project-bg" src="img/p2.png" alt="magazine">
+        <a class="link" href="interiora.html" data-letters="Magazine">Magazine</a>
+    </div>
+
+  </div>
+
+
+
+
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+
+</html>

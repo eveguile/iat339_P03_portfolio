@@ -1,0 +1,41 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .grid-item-image{
+    margin-top: 20%; 
+    -webkit-flex: 1 500px;
+    -ms-flex: 1 500px;
+    flex: 1 400px;
+    margin-top: 5%; 
+    width: 45%;
+    margin-left: 5%;
+  }
+  
+  .grid-item-image img{
+    height: auto; 
+    max-width: 100%;
+    float: right;
+    margin-top: 10%;
+  }
+
+  .grid-item-text{
+    margin-top:10%;
+    /* width: 30rem; */
+    width: 45%;
+    flex: 1 400px;
+ 
+  }
+
+
+ 
+ 
+  
+  
+  

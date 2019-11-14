@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Evelyn Zhang</title>
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="project.html">Project</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <span data-aos="fade-down" class="nav-button" onclick="openNav()">&#9776;
+        </span>
+    </header>
+
+
+    <div class="logo-small" data-aos="fade-down">
+        <a href="index.html"><img class="image" src="img/logo.png" alt="logo"></a>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor=".other-element">
+        <h1>MAGAZINE</h1>
+    </div>
+
+
+
+
+    <div class="grid project-analysis">
+
+
+
+        <div class="grid-item-image" data-aos="fade-up"
+    >
+
+        <img class="project-image" src="img/magazine1.png" alt="page1">
+        <img class="project-image" src="img/magazine2.png" alt="page2">
+        <img class="project-image" src="img/magazine3.png" alt="page3">
+        </div>
+
+
+        <div class="grid-item-text" id="description" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+
+        <p>
+                This is a magazine layout design project I have completed in a group at a graphic design course (IAT 102). In this course, we learned how to use Adobe software to create icon, magazine layout, and advertisement design. For this project, learning how to use basic design rules to set type and imagery was the main learning objective.
+            </p>
+              <p>For the layout, the biggest challenge we faced was how to fit all of the 6-pages place-holder text and eight images into three spreads which ended up with a layout that was all packed with no white space and no hierarchy, as shown in my first draft. By thinking critically, we found out that giving more is not always good, so to solve the problem, we reduced the amount of images and decrease the font size and line spacing, which ended up with our final layout.
+                </p>
+                <p>Through this project, I learned that too much information can not compose a good design. Comparing my draft and the final design, I realized how important simplicity and whitespace are in a design; they give reader a room to breathe and create better flow for audience to follow through, and even though a layout design cannot be interactive, it still should guide people through and give the content to the reader in an efficient way.
+
+                    </p>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>

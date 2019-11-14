@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Evelyn zhang</title>
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="project.html">Project</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <span data-aos="fade-down" class="nav-button" onclick="openNav()">&#9776;
+        </span>
+    </header>
+
+
+    <div class="logo-small" data-aos="fade-down">
+        <a href="index.html"><img class="image" src="img/logo.png" alt="logo"></a>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor=".other-element">
+        <h1>Magazine</h1>
+    </div>
+
+
+
+
+    <div class="grid" data-aos="fade-down" >
+        <img class="interiora-img1" src="img/m1.png" alt="interiora1">
+    </div>
+    <div class="grid" data-aos="fade-down" >
+        <img class="interiora-img1" src="img/m2.png" alt="interiora1">
+    </div>
+    <div class="grid" data-aos="fade-down" >
+        <img class="interiora-img1" src="img/m3.png" alt="interiora1">
+    </div>
+    <div class="grid" data-aos="fade-down" >
+        <img class="interiora-img1" src="img/m4.png" alt="interiora1">
+    </div>
+    <div class="grid" data-aos="fade-down" >
+        <img class="interiora-img1" src="img/m5.png" alt="interiora1">
+    </div>
+
+
+
+    <div class="grid project-analysis">
+
+
+
+        <div class="grid-item-image" data-aos="fade-down">
+            <img class="interiora-img" src="img/p2.png" alt="interiora2">
+        </div>
+
+
+        <div class="grid-item-text" id="description" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+
+            <p>In a group of 3, we were asked to design a  five spread magazine article for print. The goal of this project is to practice our layout, communication and typographic skills. After discussion, we decided to use “relationship between human and animals” as our topic. I established the overall design and take responsibility for final adjusting.
+
+            </p>
+        </div>
+
+
+        <div class="grid-item-text" id="context" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+
+            <h4>Idation</h4>
+            <p>The first step is to research individually and make our own choice of titles, fonts, and photos. When it came to fonts selection, a challenge for me is to balance their weight, scale, style. It has to be conservative enough to look like a magazine font and special enough to catch the audiences’ eyes. I selected my fonts and photos simultaneously because they need to be coherent. I think vintage pictures look good with serif fonts.
+                </p>
+        </div>
+
+        <div class="grid-item-image" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+            <img class="interiora-img" src="img/FONTS-1.jpg" alt="context-img">
+        </div>
+
+        <div class="grid-item-text" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+        <h4>Skeching</h4>
+            <p>
+                    Then I sketched possible print layouts. By researching, I learned how magazine spreads look like, how they are different from other graphic design, what layouts are suitable for opening, middle and ending pages.
+                </p>
+
+        </div>
+
+        <div class="grid-item-image" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+        <img class="interiora-img" src="img/001.jpg" alt="persona-image">
+        </div>
+
+
+
+        <div class="grid-item-text" id="problem" data-aos="fade-up"
+        >
+            <h4>PROBLEM</h4>
+            <p>
+                  One challenge was to make spreads on InDesign based on the agreement of selection. The real challenges are to learn the software and place the elements in the right place. The hierarchy, grid structure, and white space were confusing for my first time designing magazine.
+            </p>
+        </div>
+
+        <div class="grid-item-text" id="evaluation" data-aos="fade-up"
+        >
+            <h4>EVALUATION</h4>
+            <p>
+              After multiple adjustments, and conquering different challenges, the final design is pretty consistent overall. My favorite spreads are the beginning and ending. The remaining spreads are a little bit weak on grid structure.
+
+From this project, I learned to create flows to lead readers and manipulating important lines and whitespace to create hierarchy and aesthetic unity.
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>

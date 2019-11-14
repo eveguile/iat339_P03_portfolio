@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Evelyn Zhang</title>
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Smooth Scrolling. Retrieved from https://www.w3schools.com/howto/howto_css_smooth_scroll.asp -->
+
+       <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="project.html">Project</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <span data-aos="fade-down" class="nav-button" onclick="openNav()">&#9776;
+        </span>
+    </header>
+
+
+    <div class="logo-small" data-aos="fade-down">
+        <a href="index.html"><img class="image" src="img/logo.png" alt="logo"></a>
+    </div>
+
+    <div data-aos="fade-up" data-aos-anchor=".other-element">
+        <h1>SYMBIOSIS</h1>
+    </div>
+
+
+
+
+    <div class="grid project-analysis">
+
+
+
+        <div class="grid-item-image" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+            <img class="project-image" src="img/symbiosis.jpg" alt="spectrum">
+        </div>
+
+
+        <div class="grid-item-text" id="description" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+
+            <p>
+                This system is called “Symbiosis”, a smart device for the home that connects human and nature. The Symbiosis
+helps the user to keep track of their loved plants and promote the awareness of self-love. In this
+device, the plant is a symbol of the user’s well being.
+            </p>
+        </div>
+
+
+        <div class="grid-item-image" id="process" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+
+            <h4>Step 1 Features</h4>
+            <img src="img/1.PNG" alt="spectrum">
+        </div>
+        <div class="grid-item-text" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+
+            <p>
+                we did some research, and came up with the features that we wanted to develop with the system. As well as
+                how the user is going to interact with those features. The plant status based on soil moisture
+                and light can be monitored through a screen and helps maintain the plant’s life. To water the
+                plant, the user is required to dispense water from a water dispenser to activate the watering
+                system. The statistics on the screen concludes how a user cares about oneself and the plant.
+
+            </p>
+
+        </div>
+
+        <div class="grid-item-image" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+            <h4>Step 2 Start Building</h4>
+            <img src="img/2.png" alt="spectrum">
+        </div>
+        <div class="grid-item-text" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+
+
+            <p>
+              The GUI will be displayed on computer, it communicates between the device and the
+user. The user can modify the setting by inserting data through the processing
+application. The GUI will visualize the plant’s health status, and also reminds the user to
+water the plant by drinking water, or give the plant some light.
+A second monitor will be attached to a wooden platform, displaying the current humidity
+and illumination statistics of the plant. Ex. ”Moist: 30%; Status: Safe.
+
+            </p>
+        </div>
+
+        <div class="grid-item-image" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
+            <h4>Step 3 Modifing</h4>
+            <img src="img/3.jpg" alt="spectrum">
+
+        </div>
+
+        <div class="grid-item-image" data-aos="fade-up">
+
+            <p>
+                From the feedback that we got from the class,
+                we ended up changing the alarm feature into a carbon monoxide detector which will be more
+                useful in different space at home, not only bedroom.
+            </p>
+        </div>
+
+
+        <div class="grid-item-image" id="problem" data-aos="fade-up">
+            <h4>PROBLEM</h4>
+            <p>
+                We spent a lot time trying to figure out why our LCD display is not working, and tried different code
+                and different libraries. With TA’s help, it ended up was the soldering that was not done properly.
+                Soldering was the first step which we had to connect two parts together, so when something is wrong, we
+                need to always think it though again to find the problem.
+            </p>
+        </div>
+
+        <div class="grid-item-image" id="evaluation" data-aos="fade-up"
+        >
+            <h4>EVALUATION</h4>
+            <p>
+                I think this project was done well, we did put a lot effort within this seven weeks and we did learn a
+                lot from it. First of all, doing what we would be enjoy doing was important. My major role for this
+                project was the coding part, and I did encounter a lot of problems, but learned a lot as well with these
+                two program application: Processing and Arduino. From struggling with the LCD display, I learned that if
+                you can’t find the reason why something is not working, always check everything from the beginning and
+                you will find out. </p>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>
