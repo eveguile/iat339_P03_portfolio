@@ -20,7 +20,7 @@ p {
 }
 a, .project-nav a{
   text-decoration: none;
-  border-bottom: 1px solid grey;
+  /* border-bottom: 1px solid grey; */
   color: #ffc400;
 }
 
@@ -32,7 +32,7 @@ a:hover {
   background-repeat: repeat-x;
   background-size: 20%;
   border-bottom: 0;
-  padding-bottom: .3em;
+  /* padding-bottom: .3em; */
   text-decoration: none;
 }
 
@@ -398,6 +398,9 @@ figure:hover+span {
     margin-top:20rem;
   }
 
+.project-single a{
+  font-size: .5em;
+}
 
 }
 
@@ -627,4 +630,5 @@ video{
   font-size: 1.5rem;
   line-height: 4rem;
   font-weight: 400;
+  max-width: 70rem;
 }
